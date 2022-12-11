@@ -17,15 +17,15 @@ function fetchMovies(URL){
         });
     })
 }
-// //function to display the titles of the movies as a list
-// function displayMovie(movie){
+//function to display the titles of the movies as a list
+function displayMovie(movie){
    
-//     const list = document.createElement('li')
-//     list.style.cursor="cell"
-//     list.textContent= (movie.title)
-//     listHolder.appendChild(list)
-//     addClickEvent()
-// }
+    const list = document.createElement('li')
+    list.style.cursor="cell"
+    list.textContent= (movie.title)
+    listHolder.appendChild(list)
+    addClickEvent()
+}
 
 // //Adding the click event listener
 // function addClickEvent(){
