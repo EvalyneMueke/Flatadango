@@ -49,29 +49,29 @@ function addClickEvent(){
     }
 }
 
-// //Posting the movie details
-// // the poster to be dispalyed on the div with poster id
-// function setUpMovieDetails(funMovie){
+//Posting the movie details
+// the poster to be dispalyed on the div with poster id
+function setUpMovieDetails(funMovie){
     
-//     const preview = document.getElementById('poster')
-//     preview.src = funMovie.poster;
-// //title
-//     const movieTitle = document.querySelector('#title');
-//     movieTitle.textContent = funMovie.title;
-//     //runtime
-//     const movieTime = document.querySelector('#runtime');
-//     movieTime.textContent = `${funMovie.runtime} minutes`;
+    const preview = document.getElementById('poster')
+    preview.src = funMovie.poster;
+//title
+    const movieTitle = document.querySelector('#title');
+    movieTitle.textContent = funMovie.title;
+    //runtime
+    const movieTime = document.querySelector('#runtime');
+    movieTime.textContent = `${funMovie.runtime} minutes`;
 
-//     //description
-//     const movieDescription = document.querySelector('#film-info');
-//     movieDescription.textContent = funMovie.description;
-//     //Showtime
-//     const showTime = document.querySelector('#showtime')
-//     showTime.textContent = funMovie.showtime;
-//     // available tickets =capacity - tickets sold
-//     const tickets  = document.querySelector('#ticket-number')
-//     tickets.textContent = funMovie.capacity -funMovie.tickets_sold;
-// }
+    //description
+    const movieDescription = document.querySelector('#film-info');
+    movieDescription.textContent = funMovie.description;
+    //Showtime
+    const showTime = document.querySelector('#showtime')
+    showTime.textContent = funMovie.showtime;
+    // available tickets =capacity - tickets sold
+    const tickets  = document.querySelector('#ticket-number')
+    tickets.textContent = funMovie.capacity -funMovie.tickets_sold;
+}
 
 // //Sold out
 // const btn = document.getElementById('buy-ticket')
