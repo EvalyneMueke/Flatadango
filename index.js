@@ -27,27 +27,27 @@ function displayMovie(movie){
     addClickEvent()
 }
 
-// //Adding the click event listener
-// function addClickEvent(){
-//     let children=listHolder.children
+//Adding the click event listener
+function addClickEvent(){
+    let children=listHolder.children
     
 
-//     for(let i=0; i<children.length; i++){
-//         let child=children[i]
-//         // console.log(child) <= to check i have the right child
+    for(let i=0; i<children.length; i++){
+        let child=children[i]
+        // console.log(child) <= to check if have the right child
 
-//         child.addEventListener('click',() => {
-//             fetch(`${URL}/${i+1}`)
+        child.addEventListener('click',() => {
+            fetch(`${URL}/${i+1}`)
 
-//             .then(res => res.json())
-//             .then(movie => {
-//                 document.getElementById('buy-ticket').textContent = 'Buy Ticket'
-//                 setUpMovieDetails(movie)
-//             })
+            .then(res => res.json())
+            .then(movie => {
+                document.getElementById('buy-ticket').textContent = 'Buy Ticket'
+                setUpMovieDetails(movie)
+            })
 
-//         })
-//     }
-// }
+        })
+    }
+}
 
 // //Posting the movie details
 // // the poster to be dispalyed on the div with poster id
