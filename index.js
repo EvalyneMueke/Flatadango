@@ -74,16 +74,16 @@ function setUpMovieDetails(funMovie){
 }
 
 // //Sold out
-// const btn = document.getElementById('buy-ticket')
+const btn = document.getElementById('buy-ticket')
 
-//         btn.addEventListener('click', function(event){
-//             let remainingTickets = document.querySelector('#ticket-number').textContent
-//             event.preventDefault()
-//             if(remainingTickets > 0){
-//                 document.querySelector('#ticket-number').textContent  = remainingTickets-1
+        btn.addEventListener('click', function(event){
+            let remainingTickets = document.querySelector('#ticket-number').textContent
+            event.preventDefault()
+            if(remainingTickets > 0){
+                document.querySelector('#ticket-number').textContent  = remainingTickets-1
                 
-//             }
-//             else if(parseInt(remTickets, 10)===0){
-//                 btn.textContent = 'Sold Out'
-//             }
-//     })
+            }
+            else if(parseInt(remTickets, 10)===0){
+                btn.textContent = 'Sold Out'
+            }
+    })
